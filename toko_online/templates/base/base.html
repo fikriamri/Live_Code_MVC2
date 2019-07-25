@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+    <!-- css custom -->
+    <link rel="stylesheet" href="{% static 'CSS/main.css' %}">
+    {% block title %}
+    {% endblock %}
+    <link rel="shortcut icon" href="" />
+</head>
+<body>
+    <header id="page-top">
+    <div class="containter-fluid fixed-top">
+        <div class="row ">
+            <div class="col-1 menu-bar">
+                <a href="http://fikriamri15.pythonanywhere.com/"><h6 class="text-title">Toko Online</h6></a>
+            </div>
+            <div class="col-11 menu-choice">
+                    <a href="http://fikriamri15.pythonanywhere.com/"><h6>Home</h6></a>   
+            </div>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
